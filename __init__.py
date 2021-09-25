@@ -42,7 +42,7 @@ class Command:
         return self._data
 
     def get_items(self, prefix):
-        """ returns generator of bootstrap completion items matching
+        """ returns generator of completion items matching
             specified class-name prefix
         """
         it = iter(self.comp_items)
@@ -57,7 +57,7 @@ class Command:
     def on_complete(self, ed_self):
         """ shows completion dialog: `ed_self.complete_alt()`
         """
-        pass;       LOG and print(f'- bstrap compelte')
+        pass;       LOG and print(f'- bulma compelte')
         carets = ed_self.get_carets()
         if not all(c[3]==-1 for c in carets):   # abort if selection
             return
@@ -65,7 +65,7 @@ class Command:
         try:
             comp_cfgs = [_get_caret_completion_cfg(ed_self, c) for c in carets]
         except InvalidCaretException as ex:
-            pass;       LOG and print(f'.bstrap fail: {ex}')
+            pass;       LOG and print(f'.bulma fail: {ex}')
             return
 
         # possble prefixes set: single empty, single, multiple
@@ -97,7 +97,7 @@ class Command:
         """
         if snippet_id != SNIP_ID:       return
 
-        pass;       LOG and print(f'- bstrap: on snip: {snippet_text}')
+        pass;       LOG and print(f'- bulma: on snip: {snippet_text}')
 
         replace_attr = len(self._comp_cfgs) > 1     # if multicaret - replace whole attribute value
         new_carets = []
