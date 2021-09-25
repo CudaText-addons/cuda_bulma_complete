@@ -1,0 +1,11 @@
+[info]
+title=Bulma Completion
+desc=Completion for Bulma classes
+type=cudatext-plugin
+subdir=cuda_bulma_complete
+homepage=https://github.com/CudaText-addons/cuda_bulma_complete
+
+[item1]
+section=events
+lexers=regex:HTML.*
+events=on_complete++,on_snippet
