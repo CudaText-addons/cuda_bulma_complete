@@ -59,6 +59,7 @@ class Command:
         """
         pass;       LOG and print(f'- bulma compelte')
         carets = ed_self.get_carets()
+        if len(carets) != 1: return
         if not all(c[3]==-1 for c in carets):   # abort if selection
             return
 
