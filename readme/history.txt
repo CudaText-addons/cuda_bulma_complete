@@ -1,2 +1,7 @@
+
+2022.02.25
++ updated completion_db.py by @TomBraider42
++ better "lexers=" in install.inf
+
 2021.09.25
 initial version
