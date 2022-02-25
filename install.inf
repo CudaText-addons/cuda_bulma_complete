@@ -7,5 +7,5 @@ homepage=https://github.com/CudaText-addons/cuda_bulma_complete
 
 [item1]
 section=events
-lexers=regex:HTML.*
+lexers=regex:HTML.*|PHP
 events=on_complete++,on_snippet
